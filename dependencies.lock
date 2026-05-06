@@ -1,0 +1,42 @@
+dependencies:
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 0.5.3
+  espressif/esp_lcd_sh8601:
+    component_hash: e04af6e37397bd822cbf0df6b51fa29cb2ffabea7c61d789a890e2792c8bf646
+    dependencies:
+    - name: espressif/cmake_utilities
+      registry_url: https://components.espressif.com
+      require: private
+      version: 0.*
+    - name: idf
+      require: private
+      version: '>=5.3'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.0.1
+  idf:
+    source:
+      type: idf
+    version: 5.5.3
+  lvgl:
+    dependencies: []
+    source:
+      path: C:\Users\gbarr\Desktop\ESP32-S3-AMOLED-1.43-Demo\ESP-IDF_copy\07_LVGL_Test\components\lvgl
+      type: local
+    version: 8.3.11
+direct_dependencies:
+- espressif/esp_lcd_sh8601
+- idf
+- lvgl/lvgl
+manifest_hash: e83274a60e051ae72165d2479525dee76a126771ec830ba51f9f4b2014811fab
+target: esp32s3
+version: 2.0.0

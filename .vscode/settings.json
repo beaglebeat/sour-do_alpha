@@ -1,0 +1,15 @@
+{
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.portWin": "COM4",
+    "idf.flashType": "UART",
+    "files.associations": {
+        "touch_bsp.h": "c",
+        "lv_demos.h": "c"
+    },
+    "idf.currentSetup": "C:\\esp\\v5.5.3\\esp-idf",
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32s3"
+    }
+}
